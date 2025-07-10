@@ -27,29 +27,87 @@ A web-based resource tracking tool for Empyrion - Galactic Survival. Track minin
 ## 📋 Requirements
 
 - Python 3.7+
-- Flask web framework
+- Flask web framework (for web version)
+- PySide6 (for desktop version - optional)
+
+## 📦 Available Versions
+
+This tracker comes in two versions:
+
+### 🌐 Web Version (Recommended)
+- **File:** `empyrion_tracker.py` 
+- **Best for:** Mobile access, sharing with friends, CachyOS/Linux
+- **Access:** Browser-based, works on phones/tablets
+- **Requirements:** Flask only
+
+### 🖥️ Desktop Version (Alternative)
+- **File:** `empyrion_tracker_desktop.py`
+- **Best for:** Traditional desktop application
+- **Access:** Native desktop window
+- **Requirements:** PySide6
 
 ## 🚀 Quick Start
 
-### 1. Installation
+### Installation Options
 
-```bash
+#### Option 1: Web Version Only (Recommended)
+The web application will show you the access URLs:bash
 # Install Flask
 pip install flask
-
-# Download the application
-# Save the empyrion_tracker.py file to your desired directory
 ```
 
-### 2. Run the Application
+#### Option 2: Desktop Version Only
+```bash
+# Install PySide6
+pip install pyside6
+```
+
+#### Option 3: Both Versions
+```bash
+# Install all requirements
+pip install -r requirements.txt
+
+# Or install individually
+pip install flask pyside6
+```
+
+### Running the Applications
+
+#### Web Version
+```bash
+python empyrion_tracker.py
+# Access at: http://localhost:5000
+```
+
+#### Desktop Version
+```bash
+python empyrion_tracker_desktop.py
+# Opens native desktop window
+```
+
+### 2. Download the Application
+
+```bash
+# Create project directory
+mkdir empyrion-tracker
+cd empyrion-tracker
+
+# Download files (save these to your directory):
+# - empyrion_tracker.py (web version)
+# - empyrion_tracker_desktop.py (desktop version - optional)
+# - requirements.txt
+
+# Install requirements
+pip install -r requirements.txt
+```
 
 ```bash
 python empyrion_tracker.py
 ```
 
-### 3. Access the Tracker
+### 3. Run the Application
 
-The application will show you the access URLs:
+### 4. Access the Tracker
 
 ```
 🚀 Empyrion Resource Location Tracker
